@@ -14,7 +14,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve ser possível registrar nome, endereço e gerente responsável.  
 - A filial cadastrada deve aparecer na listagem geral de filiais.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -30,7 +30,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve permitir edição de informações de uma filial.  
 - Deve permitir exclusão de filiais.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -45,7 +45,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve permitir o registro de nome, descrição, código de barras e categoria.  
 - Produto cadastrado deve ficar disponível para ativação em filiais.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -61,7 +61,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve permitir edição de dados do produto.  
 - Deve permitir exclusão de produtos.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -77,7 +77,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve registrar preço de compra, preço de venda e estoque mínimo.  
 - Produto deve aparecer no inventário da filial após ativação.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -140,7 +140,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve exibir lista de produtos e respectivas quantidades.  
 - Deve indicar estoque mínimo e se o produto está abaixo dele.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -155,7 +155,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve permitir busca por nome e código de barras.  
 - Deve retornar lista com todas as filiais e respectivos estoques.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -170,7 +170,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve listar apenas produtos abaixo do estoque mínimo.  
 - Deve permitir visualização por filial e consolidado da rede.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
 
 ---
@@ -186,5 +186,5 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve calcular valor total consolidado da rede.  
 - Deve considerar preço de compra x quantidade em estoque.  
 
-**Status:** A Fazer  
+**Status:** Feito  
 **Tipo:** Funcionalidade  
