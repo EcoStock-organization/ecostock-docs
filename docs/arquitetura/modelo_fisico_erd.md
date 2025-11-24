@@ -7,5 +7,5 @@ Este diagrama foi gerado automaticamente pela ferramenta DBeaver, conectando-se 
 É importante notar a convenção de nomenclatura do Django ORM: as tabelas são nomeadas no formato `nome_do_app_nome_do_modelo` (ex: `produto_produto`, `filial_filial`, `estoque_itemestoque`), que é a representação física exata do nosso Diagrama de Classes lógico.
 
 <div align="center">
-  <img src="../assets/erd.png" alt="Modelo Físico (ERD) do Banco de Dados" width="900px">
+  <img src="assets/erd.png" alt="Modelo Físico (ERD) do Banco de Dados" width="900px">
 </div>

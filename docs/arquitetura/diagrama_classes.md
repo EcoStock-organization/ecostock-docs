@@ -5,7 +5,7 @@ Este diagrama de classes modela a arquitetura de software para um sistema de Ger
 O modelo é centrado em quatro domínios de negócio claros: **Usuários e Acesso**, **Produtos (Catálogo)**, **Estoque (Inventário)** e **Transações (Vendas)**.
 
 <div align="center">
-  <img src="../assets/diagrama_classes.png" alt="Diagrama de Classes do Sistema de Estoque" width="800px">
+  <img src="assets/diagrama_classes.png" alt="Diagrama de Classes do Sistema de Estoque" width="800px">
 </div>
 
 

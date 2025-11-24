@@ -11,7 +11,7 @@ A porta de entrada do sistema.
 Nesta tela, os usuários — **Administrador** ou **Gerente** — inserem suas credenciais para acessar a plataforma.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaLogin.png" alt="Tela de Login do Sistema" width="800px">
+  <img src="assets/prototipo/TelaLogin.png" alt="Tela de Login do Sistema" width="800px">
   <p><em>Figura 1 — Tela de Login</em></p>
 </div>
 
@@ -21,7 +21,7 @@ Após o login, o **Administrador** (exemplo: *Gustavo*) acessa o painel principa
 A tela inclui **indicadores-chave (KPIs)**, atalhos para filiais e métricas globais de desempenho.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaDashboard.png" alt="Tela de Dashboard do Administrador" width="800px">
+  <img src="assets/prototipo/TelaDashboard.png" alt="Tela de Dashboard do Administrador" width="800px">
   <p><em>Figura 2 — Dashboard do Administrador</em></p>
 </div>
 
@@ -32,12 +32,12 @@ Nela, **Gerentes e Administradores** podem **monitorar e ajustar o inventário**
 A interface prioriza a **clareza das informações** e o **acesso rápido às ações de controle de estoque**.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaEstoque1.png" alt="Tela de Gestão de Estoque - Visão Principal" width="800px">
+  <img src="assets/prototipo/TelaEstoque1.png" alt="Tela de Gestão de Estoque - Visão Principal" width="800px">
   <p><em>Figura 3 — Controle de Estoque (Visão Principal)</em></p>
 </div>
 
 <div align="center">
-  <img src="../assets/prototipo/TelaEstoque2.png" alt="Tela de Gestão de Estoque - Resumo" width="800px">
+  <img src="assets/prototipo/TelaEstoque2.png" alt="Tela de Gestão de Estoque - Resumo" width="800px">
   <p><em>Figura 4 — Resumo do Estoque</em></p>
 </div>
 
@@ -47,7 +47,7 @@ Tela utilizada pelo **Administrador** para **gerenciar o catálogo central de pr
 É neste ambiente que novos produtos são cadastrados e preparados para integração com o estoque das filiais.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaProduto.png" alt="Tela de Gestão do Catálogo de Produtos" width="800px">
+  <img src="assets/prototipo/TelaProduto.png" alt="Tela de Gestão do Catálogo de Produtos" width="800px">
   <p><em>Figura 5 — Catálogo Central de Produtos</em></p>
 </div>
 
@@ -57,7 +57,7 @@ Interface exclusiva do **Administrador**, responsável por **cadastrar, visualiz
 O layout prioriza a clareza e a eficiência na manutenção de dados corporativos.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaFilial.png" alt="Tela de Gestão de Filiais" width="800px">
+  <img src="assets/prototipo/TelaFilial.png" alt="Tela de Gestão de Filiais" width="800px">
   <p><em>Figura 6 — Gestão de Filiais</em></p>
 </div>
 
@@ -67,7 +67,7 @@ Tela dedicada à visão do **Gerente**, com funcionalidades restritas em relaç�
 Aqui o gerente pode **gerenciar produtos e estoques**, mas **não possui permissão para adicionar ou remover filiais**.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaGerente.png" alt="Tela da Visão dos Gerentes" width="800px">
+  <img src="assets/prototipo/TelaGerente.png" alt="Tela da Visão dos Gerentes" width="800px">
   <p><em>Figura 7 — Interface do Gerente</em></p>
 </div>
 
@@ -76,7 +76,7 @@ Aqui o gerente pode **gerenciar produtos e estoques**, mas **não possui permiss
 Tela exclusiva do **Administrador**, projetada para **cadastrar, editar e apagar usuários** do sistema (administradores e gerentes).  
 
 <div align="center">
-  <img src="../assets/prototipo/TelaUsuarios.png" alt="Tela de Gestão de Usuários" width="800px">
+  <img src="assets/prototipo/TelaUsuarios.png" alt="Tela de Gestão de Usuários" width="800px">
   <p><em>Figura 8 — Gestão de Usuários</em></p>
 </div>
 
@@ -93,7 +93,7 @@ Nesta seção, são exibidos **gráficos e indicadores de receita** com base nas
   - Apenas a **receita de sua própria filial**.
 
 <div align="center">
-  <img src="../assets/prototipo/TelaRelatorio.png" alt="Tela de Relatórios e Receita" width="800px">
+  <img src="assets/prototipo/TelaRelatorio.png" alt="Tela de Relatórios e Receita" width="800px">
   <p><em>Figura 9 — Tela de Relatórios e Receita</em></p>
 </div>
 
