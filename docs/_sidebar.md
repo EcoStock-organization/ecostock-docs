@@ -1,11 +1,11 @@
 * [Home]()
 
-* [Minicenário](./Minicenario/minicenario.md)
+* [Minicenário](./planejamento/minicenario.md)
 
-* [Backlog](./Backlog/backlog.md)
+* [Backlog](./planejamento/backlog.md)
 
-* [Diagrama de Classes](DiagramaDeClasses/diagramaDeClasses.md)
+* [Diagrama de Classes](./arquitetura/diagrama_classes.md)
 
-* [Protótipo](Prototipo/prototipo.md)
+* [Protótipo](./planejamento/prototipo.md)
 
-* [Modelo Físico (ERD)](ModeloFisico/modeloFisico.md)
+* [Modelo Físico (ERD)](./arquitetura/modelo_fisico_erd.md)
