@@ -1,13 +1,12 @@
 # Diagrama de Classes
 
-Este diagrama de classes modela a arquitetura de software para um sistema de Gerenciamento de Estoque Multi-Filial. O design foi concebido utilizando princípios de Orientação a Objetos para garantir uma estrutura flexível, manutenível e que representa fielmente as regras de negócio.
+Este diagrama modela a arquitetura de software para um sistema de Gerenciamento de Estoque Multi-Filial. O design foi concebido utilizando princípios de Orientação a Objetos para garantir uma estrutura flexível, manutenível e que representa fielmente as regras de negócio.
 
 O modelo é centrado em quatro domínios de negócio claros: **Usuários e Acesso**, **Produtos (Catálogo)**, **Estoque (Inventário)** e **Transações (Vendas)**.
 
 <div align="center">
   <img src="assets/diagrama_classes.png" alt="Diagrama de Classes do Sistema de Estoque" width="800px">
 </div>
-
 
 ## Arquitetura do Modelo e Padrões de Design
 
@@ -21,24 +20,24 @@ A estrutura do diagrama se baseia em padrões de design que promovem um código 
 
 - **Soft Delete:** Em vez de exclusão física, o sistema utiliza um atributo `status` em entidades como `Produto` e `Filial`. Isso garante a **integridade histórica** dos dados, permitindo que relatórios e análises passadas continuem funcionando mesmo que um produto seja descontinuado.
 
-
 ## Classes Principais e Suas Responsabilidades
 
 ### Domínio de Usuários e Acesso
-- **`Usuario` (Abstrata):** Molde base para todos os atores do sistema, contendo dados de autenticação.
+- **`Usuario` (Abstrata):** Molde base para todos os atores do sistema. Além de dados de autenticação (`email`, `senha`), armazena dados de identificação como **`cpf`** e o atributo **`cargo`**.
+- **`Cargo` (Enum):** Enumeração que define os papéis possíveis no sistema (`ADMINISTRADOR`, `GERENTE`, `OPERADOR`). Isso permite identificar Operadores de Caixa e controlar permissões sem a necessidade de uma classe específica para cada função operacional.
 - **`Administrador`:** Orquestrador do sistema. Não possui estado próprio, mas detém os métodos para realizar operações globais, como `adicionar_filial()` e `descontinuar_produto()`.
 - **`Gerente`:** Ator com escopo limitado, fortemente associado a **uma** `Filial`. Seus métodos, como `solicitar_reposicao_estoque()`, refletem ações no contexto de sua própria loja.
 
 ### Domínio de Produtos (Catálogo)
--   **`Produto` (Abstrata):** Define a identidade universal de um item (nome, código de barras), servindo como entrada única no catálogo da empresa.
--   **`ProdutoUnitario` / `ProdutoPesavel`:** Especializações que implementam regras de negócio distintas, principalmente na validação de quantidades (números inteiros vs. decimais).
+- **`Categoria`:** Classe responsável por agrupar produtos em famílias lógicas (ex: "Bebidas", "Limpeza"). Facilita a organização e a geração de relatórios setorizados.
+- **`Produto` (Abstrata):** Define a identidade universal de um item (nome, código de barras), servindo como entrada única no catálogo da empresa. Possui um relacionamento com `Categoria`.
+- **`ProdutoUnitario` / `ProdutoPesavel`:** Especializações que implementam regras de negócio distintas, principalmente na validação de quantidades (números inteiros vs. decimais).
 
 ### Domínio de Estoque (Inventário)
--   **`Filial`:** Representa uma loja física. É a classe que gerencia ativamente seu próprio inventário através de métodos como `registrar_entrada()`, `registrar_saida()` e `atualizar_preco_venda()`.
--   **`ItemEstoque`:** **Classe central do sistema.** Representa a existência de um `Produto` em uma `Filial` específica, armazenando os dados que só fazem sentido nesse contexto: `quantidade_atual` e `preco_venda_atual`.
+- **`Filial`:** Representa uma loja física. É a classe que gerencia ativamente seu próprio inventário através de métodos como `registrar_entrada()`, `registrar_saida()` e `atualizar_preco_venda()`.
+- **`ItemEstoque`:** **Classe central do sistema.** Representa a existência de um `Produto` em uma `Filial` específica, armazenando os dados que só fazem sentido nesse contexto: `quantidade_atual` e `preco_venda_atual`.
 
 ### Domínio de Transações (Vendas)
--   **`Venda`:** Modela uma transação de venda. Possui um ciclo de vida gerenciado por métodos como `adicionar_item()`, `finalizar_venda(forma: FormaPagamento)` e `cancelar_venda()`. O método `finalizar_venda` é o gatilho que dispara a baixa no estoque.
--   **`ItemVenda`:** Linha de uma venda. "Fotografa" a quantidade e o preço de um produto no momento exato da transação, garantindo a precisão do histórico financeiro.
--   **`FormaPagamento` (Enum):** Garante que as formas de pagamento sejam um conjunto de constantes predefinidas e seguras.
-
+- **`Venda`:** Modela uma transação de venda. Possui um ciclo de vida gerenciado por métodos como `adicionar_item()`, `finalizar_venda(forma: FormaPagamento)` e `cancelar_venda()`. O método `finalizar_venda` é o gatilho que dispara a baixa no estoque.
+- **`ItemVenda`:** Linha de uma venda. "Fotografa" a quantidade e o preço de um produto no momento exato da transação, garantindo a precisão do histórico financeiro.
+- **`FormaPagamento` (Enum):** Garante que as formas de pagamento sejam um conjunto de constantes predefinidas e seguras.
