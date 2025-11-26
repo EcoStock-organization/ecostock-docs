@@ -1,109 +1,30 @@
-# Protótipo do Gerenciador de Estoque
+# Protótipo Visual (UI)
 
 ## Introdução
 
-Este documento apresenta o **protótipo de alta fidelidade** da interface do usuário (UI) do **Sistema de Gerenciamento de Estoque**.  
-O objetivo desta versão é **validar o fluxo de navegação, usabilidade e estrutura visual** das principais funcionalidades definidas no backlog e no diagrama de classes.
+Este documento apresenta a visão da Interface de Usuário (UI) do **Sistema de Gerenciamento de Estoque**. O design foi construído com foco em usabilidade, clareza e eficiência operacional para os perfis de **Administrador**, **Gerente** e **Operador de Caixa**.
 
-## 1. Tela de Login
+O protótipo abaixo demonstra a identidade visual do sistema, utilizando uma paleta de cores profissional e componentes modernos para garantir uma experiência fluida.
 
-A porta de entrada do sistema.  
-Nesta tela, os usuários — **Administrador** ou **Gerente** — inserem suas credenciais para acessar a plataforma.
+### Tela de Login
+
+A porta de entrada do sistema, projetada para ser simples e direta. Aqui, o usuário insere suas credenciais e o sistema automaticamente o redireciona para o ambiente correto com base no seu cargo (Dashboard para gestores ou Frente de Caixa para operadores).
 
 <div align="center">
-  <img src="assets/prototipo/TelaLogin.png" alt="Tela de Login do Sistema" width="800px">
+  <img src="assets/TelaLogin.png" alt="Tela de Login do Sistema EcoStock" width="800px">
   <p><em>Figura 1 — Tela de Login</em></p>
 </div>
 
-## 2. Dashboard (Visão do Administrador)
+---
 
-Após o login, o **Administrador** (exemplo: *Gustavo*) acessa o painel principal, que apresenta uma **visão consolidada da rede de supermercados**.  
-A tela inclui **indicadores-chave (KPIs)**, atalhos para filiais e métricas globais de desempenho.
+## Acesso ao Protótipo Interativo
 
-<div align="center">
-  <img src="assets/prototipo/TelaDashboard.png" alt="Tela de Dashboard do Administrador" width="800px">
-  <p><em>Figura 2 — Dashboard do Administrador</em></p>
-</div>
-
-## 3. Gestão de Estoque
-
-A tela operacional mais importante do sistema.  
-Nela, **Gerentes e Administradores** podem **monitorar e ajustar o inventário** de uma filial específica.  
-A interface prioriza a **clareza das informações** e o **acesso rápido às ações de controle de estoque**.
-
-<div align="center">
-  <img src="assets/prototipo/TelaEstoque1.png" alt="Tela de Gestão de Estoque - Visão Principal" width="800px">
-  <p><em>Figura 3 — Controle de Estoque (Visão Principal)</em></p>
-</div>
-
-<div align="center">
-  <img src="assets/prototipo/TelaEstoque2.png" alt="Tela de Gestão de Estoque - Resumo" width="800px">
-  <p><em>Figura 4 — Resumo do Estoque</em></p>
-</div>
-
-## 4. Catálogo de Produtos (Central)
-
-Tela utilizada pelo **Administrador** para **gerenciar o catálogo central de produtos** da empresa.  
-É neste ambiente que novos produtos são cadastrados e preparados para integração com o estoque das filiais.
-
-<div align="center">
-  <img src="assets/prototipo/TelaProduto.png" alt="Tela de Gestão do Catálogo de Produtos" width="800px">
-  <p><em>Figura 5 — Catálogo Central de Produtos</em></p>
-</div>
-
-## 5. Gestão de Filiais
-
-Interface exclusiva do **Administrador**, responsável por **cadastrar, visualizar, editar e remover filiais** da rede.  
-O layout prioriza a clareza e a eficiência na manutenção de dados corporativos.
-
-<div align="center">
-  <img src="assets/prototipo/TelaFilial.png" alt="Tela de Gestão de Filiais" width="800px">
-  <p><em>Figura 6 — Gestão de Filiais</em></p>
-</div>
-
-## 6. Gestão de Gerentes
-
-Tela dedicada à visão do **Gerente**, com funcionalidades restritas em relação ao administrador.  
-Aqui o gerente pode **gerenciar produtos e estoques**, mas **não possui permissão para adicionar ou remover filiais**.
-
-<div align="center">
-  <img src="assets/prototipo/TelaGerente.png" alt="Tela da Visão dos Gerentes" width="800px">
-  <p><em>Figura 7 — Interface do Gerente</em></p>
-</div>
-
-## 7. Gestão de Usuários
-
-Tela exclusiva do **Administrador**, projetada para **cadastrar, editar e apagar usuários** do sistema (administradores e gerentes).  
-
-<div align="center">
-  <img src="assets/prototipo/TelaUsuarios.png" alt="Tela de Gestão de Usuários" width="800px">
-  <p><em>Figura 8 — Gestão de Usuários</em></p>
-</div>
-
-## 8. Relatórios e Receita
-
-Tela dedicada à **visualização de relatórios financeiros e operacionais**.  
-Nesta seção, são exibidos **gráficos e indicadores de receita** com base nas vendas registradas por filial.
-
-- O **Administrador** visualiza:
-  - Receita total consolidada de todas as filiais;
-  - Receita individual por filial (filtro ou menu dropdown).
-
-- O **Gerente** visualiza:
-  - Apenas a **receita de sua própria filial**.
-
-<div align="center">
-  <img src="assets/prototipo/TelaRelatorio.png" alt="Tela de Relatórios e Receita" width="800px">
-  <p><em>Figura 9 — Tela de Relatórios e Receita</em></p>
-</div>
-
-## Acesso Interativo ao Protótipo
-
-Para explorar o protótipo de forma interativa, acesse o link abaixo:
+Para visualizar o fluxo completo de navegação, incluindo os Dashboards, Gestão de Estoque e a Frente de Caixa (PDV), acesse a versão interativa hospedada online.
 
 <div align="center">
 
-🔗 **[Acessar Protótipo Interativo](https://ecostock.vercel.app/login)**  
-*(clique para abrir em nova aba)*
+### [🔗 Clique aqui para acessar o Protótipo Interativo](https://ecostock.vercel.app/login)
 
 </div>
+
+> **Nota:** O protótipo é responsivo e simula as principais interações do sistema final.
