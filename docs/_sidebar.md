@@ -9,3 +9,5 @@
 * [Protótipo](./planejamento/prototipo.md)
 
 * [Modelo Físico (ERD)](./arquitetura/modelo_fisico_erd.md)
+
+* [Schema SQL (DDL)](./arquitetura/ddl.md)
