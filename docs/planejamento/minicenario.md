@@ -30,7 +30,6 @@
 -   **Movimentação de Estoque:**
     -   **Registrar Entrada:** Aumentar a quantidade de um produto em uma filial específica (ex: ao receber um pedido de um fornecedor).
     -   **Registrar Saída:** Diminuir a quantidade de um produto em uma filial (ex: por venda, perda ou vencimento).
-    -   **Transferência entre Filiais:** Criar uma operação para mover uma quantidade `X` de um produto da `Filial A` para a `Filial B`.
 
 ### 3. Consultas e Relatórios Centralizados
 
