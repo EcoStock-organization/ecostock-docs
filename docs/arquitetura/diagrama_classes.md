@@ -18,15 +18,13 @@ A estrutura do diagrama se baseia em padrões de design que promovem um código 
 
 - **Encapsulamento e Intenção:** Métodos como `desativar_filial()` e `finalizar_venda()` foram preferidos em vez de "setters" genéricos. Isso torna a interface das classes mais clara, pois os nomes dos métodos revelam a **intenção de negócio**, e a lógica complexa fica encapsulada dentro da classe.
 
-- **Soft Delete:** Em vez de exclusão física, o sistema utiliza um atributo `status` em entidades como `Produto` e `Filial`. Isso garante a **integridade histórica** dos dados, permitindo que relatórios e análises passadas continuem funcionando mesmo que um produto seja descontinuado.
-
 ## Classes Principais e Suas Responsabilidades
 
 ### Domínio de Usuários e Acesso
-- **`Usuario` (Abstrata):** Molde base para todos os atores do sistema. Além de dados de autenticação (`email`, `senha`), armazena dados de identificação como **`cpf`** e o atributo **`cargo`**.
-- **`Cargo` (Enum):** Enumeração que define os papéis possíveis no sistema (`ADMINISTRADOR`, `GERENTE`, `OPERADOR`). Isso permite identificar Operadores de Caixa e controlar permissões sem a necessidade de uma classe específica para cada função operacional.
+- **`Usuario` (Abstrata):** Molde base para todos os atores do sistema. Além de dados de autenticação (`email`, `senha`), armazena dados de identificação como **`cpf`*.
 - **`Administrador`:** Orquestrador do sistema. Não possui estado próprio, mas detém os métodos para realizar operações globais, como `adicionar_filial()` e `descontinuar_produto()`.
 - **`Gerente`:** Ator com escopo limitado, fortemente associado a **uma** `Filial`. Seus métodos, como `solicitar_reposicao_estoque()`, refletem ações no contexto de sua própria loja.
+- **`Operador`:** Ator com escopo limitado, fortemente associado a **uma** `Filial`. Seu acesso está restrito a vendas.
 
 ### Domínio de Produtos (Catálogo)
 - **`Categoria`:** Classe responsável por agrupar produtos em famílias lógicas (ex: "Bebidas", "Limpeza"). Facilita a organização e a geração de relatórios setorizados.
