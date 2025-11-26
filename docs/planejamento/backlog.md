@@ -93,7 +93,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Deve permitir informar quantidade adicionada.  
 - Estoque deve ser atualizado corretamente.  
 
-**Status:** A Fazer  
+**Status:** Feito   
 **Tipo:** Funcionalidade  
 
 ---
@@ -109,28 +109,12 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 - Estoque deve ser decrementado corretamente.  
 - Caso estoque fique negativo, deve exibir alerta/erro.  
 
-**Status:** A Fazer  
+**Status:** Feito   
 **Tipo:** Funcionalidade  
 
 ---
 
 ## História #08
-
-**Título:** Transferência de Estoque entre Filiais  
-
-> **Como** proprietário, **desejo** registrar a transferência de produtos entre duas filiais, **para** remanejar estoque conforme a demanda.  
-
-**Critérios de Aceitação:**  
-- Deve permitir selecionar filial de origem e de destino.  
-- Quantidade deve ser removida do estoque da origem e adicionada à de destino.  
-- Deve gerar registro histórico da transferência.  
-
-**Status:** A Fazer  
-**Tipo:** Funcionalidade  
-
----
-
-## História #09
 
 **Título:** Visualizar Estoque de Filial  
 
@@ -145,7 +129,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 
 ---
 
-## História #10
+## História #9
 
 **Título:** Buscar Produto em Todas as Filiais  
 
@@ -160,7 +144,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 
 ---
 
-## História #11
+## História #10
 
 **Título:** Relatório de Estoque Baixo  
 
@@ -175,7 +159,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 
 ---
 
-## História #12
+## História #11
 
 **Título:** Calcular Valor Total do Estoque  
 
