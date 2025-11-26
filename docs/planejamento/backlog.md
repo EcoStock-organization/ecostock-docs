@@ -129,7 +129,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 
 ---
 
-## História #9
+## História #09
 
 **Título:** Buscar Produto em Todas as Filiais  
 
