@@ -105,9 +105,7 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 > **Como** proprietário, **desejo** registrar a saída de uma quantidade de produto em uma filial (por venda ou perda), **para** manter o inventário preciso.  
 
 **Critérios de Aceitação:**  
-- Deve permitir registrar motivo da saída (ex.: venda, perda).  
 - Estoque deve ser decrementado corretamente.  
-- Caso estoque fique negativo, deve exibir alerta/erro.  
 
 **Status:** Feito   
 **Tipo:** Funcionalidade  
@@ -168,7 +166,6 @@ Este documento contém as histórias de usuário derivadas da modelagem do siste
 **Critérios de Aceitação:**  
 - Deve calcular valor total por filial.  
 - Deve calcular valor total consolidado da rede.  
-- Deve considerar preço de compra x quantidade em estoque.  
 
 **Status:** Feito  
 **Tipo:** Funcionalidade  
